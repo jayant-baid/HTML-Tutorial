@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jayant Baid">
+        <meta name="description" content="This page contains all things I learn in HTML">
+        <title>My Website</title>
+        <!-- Favicon -->
+        <link rel="icon" href="images/J_Logo.png" type="image/x-icon">
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="styling1.css" type="text/css">
+    </head>
+
+    <body id="Top">
+        <!-- go to bottom -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+                <li>
+                    <a href="#bottom">Go To Bottom</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Hello World</h1>
+        <hr>
+        <h2>First Paragraph</h2>
+        <p>This is my First Web Page Paragraph</p>
+        <h2>Youtube Journey</h2>
+        <p>I have 2 channels named Jayant Baid and J2 Ke Factz
+            <br>
+            .......Jayant Baid is my <strong>first channel</strong> where I react on memes,
+            <br>
+            <!-- &nbsp is for space but we can use <pre> where it shows all the spaces you added  -->
+            .......&nbsp;&nbsp; but later on, I make <em>gameplay</em> videos
+
+        </p>
+        <hr>
+        <h2>First Paragraph</h2>
+        <p>This is my First Webe Page Paragraph</p>
+        <!-- less than, copyright symbol ,greater than  -->
+        <!-- This link is absolute link -->
+        &lt; &lt; &copy; <a href="https://jayant-baid.github.io/cv/">Jayant Baid</a> &gt; &gt; &gt;
+        <br>
+        <!-- Abbreviation and when cursor goes to that it will show full form but it is not useful for modern technologies where we touch and get result like mobile  -->
+        <abbr title="HyperText Markup Language">HTML</abbr>
+        <br>
+        <abbr title="Cascading Style Sheets">CSS</abbr>
+        <br>
+        <abbr title="Javascript">Js</abbr>
+        <br>
+        <br>
+        <hr>
+        <!-- addrees automatical gets emphasied so that wreader gets your address -->
+        <address>
+            Jayant Baid <br>
+            J-1/151 Third Floor, DDA Flats <br>
+            Kalkaji, New Delhi-110019
+        </address>
+        <hr>
+        <article id="lists">
+            <!-- We can use article section div 
+            section means a particaular section generous 
+            article means details regarding that topic
+            div means divider generous for section -->
+            <!-- Ordered Lists numbers alphabets -->
+            <h3>Give Data Structure Names (in Numbering)</h3>
+            <ol>
+                <li>Arrays</li>
+                <li>Linked List</li>
+                <li>Stacks</li>
+                <li>Queue</li>
+                <li>Hash Map</li>
+                <li>Sets</li>
+                <li>Trees</li>
+                <li>Trie</li>
+            </ol>
+            <!-- Unordered Lists Points -->
+            <h3>Give Data Structure Names (in Points)</h3>
+            <ul>
+                <li>Arrays</li>
+                <li>Linked List</li>
+                <li>Stacks</li>
+                <li>Queue</li>
+                <li>Hash Map</li>
+                <li>Sets</li>
+                <li>Trees</li>
+                <li>Trie</li>
+            </ul>
+            <!-- Description List -->
+            <dl>
+                <!-- Description Term and Description Detail  -->
+                <dt><strong>Arrays</strong></dt>
+                <dd>Use Striver & Babbar Playlist Both</dd>
+
+                <dt><strong>Linked List</strong></dt>
+                <dd>Use Striver PLaylist </dd>
+
+                <dt><strong>Web Development</strong></dt>
+                <dd>Use Kunal kushwaha Roadmap</dd>
+            </dl>
+        </article>
+        <hr>
+        <!-- href -->
+        <div>
+            <!-- This link is relative -->
+            <a href="images/Jayant.jpeg" download>My Image</a>
+            <br>
+            <a href="mailto:baidjayant2002@gmail.com">My Email Id</a>
+            <br>
+            <a href="tel:+919310678369">My Number</a>
+            <br>
+            <a href="/">Back to Prev Site</a>
+        </div>
+        <hr>
+        <!-- In img tag title is not compulsory it is like complementary text when you go to image it will show this -->
+        <!-- loading="eager" is bydefault used but when you use lazy image will load when that image comes in (when there are so many content so it come when that image section comes on screen even though chrome edge shows that very quickly even in lazy)  when setting to lazy it make our site load faster-->
+        <img src="images/Jayant.jpeg" alt="Jayant Pic" title="Jayant Baid's Picture" height="150" loading="lazy">
+        <!-- Navigate to that think if there is a link -->
+        <nav id="bottom">
+            <!--  In this case it will go to top -->
+            <!-- if you add table or list where it should go then we use nav when you give reference link  -->
+            <a href="#">Go TO Top</a>
+        </nav>
+
+        <br>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel Free TO Send Your Idea To Me</p>
+            <form action="https://httpbin.org/get" method="get">
+                <!-- fieldset is like section -->
+                <fieldset>
+                    <!-- Legend is like heading for that particular field set -->
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="FirstName">First Name:</label>
+                        <!-- autofocus must be one in web and when you open then site autofocus gets focusedd and you can enter in it without first select that -->
+                        <input type="text" id="FirstName" name="FirstName" placeholder="Enter First Name"
+                            autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="LastName">Last Name:</label>
+                        <input type="text" name="LastName" id="LastName" placeholder="Enter Last Name" autocomplete="on"
+                            required>
+                    </p>
+                    <p>
+                        <label for="Password">Password:</label>
+                        <input type="password" name="Password" id="Password" placeholder="Enter Password"
+                            autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="Phone">Phone No.:</label>
+                        <input type="tel" name="Phone" id="Phone" placeholder="Enter Phone No." autocomplete="on"
+                            pattern="[0-9]{10}">
+                    </p>
+                    <p>
+                        <label>Gender: </label>
+                        <input type="radio" name="Gender" id="Male" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="Gender" id="Female" value="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="Gender" id="Other" value="Other">
+                        <label for="Other">Other</label>
+                    </p>
+                    <p>
+                        <label for="Year">Favorite Year:</label>
+                        <input type="number" name="Year" id="Year" placeholder="Enter Favorite Year" autocomplete="on"
+                            min="1950" max="2022" step="1" value="2000">
+                    </p>
+                    <!-- optgroup will also show in web but is highlighted means options are grouped -->
+                    <p>
+                        <label for="Favoritesubject">Favorite Subjet:</label>
+                        <select name="Favoritesubject" id="Favoritesubject" multiple>
+                            <!-- you can add size="5" etc for how many you want to show at a time -->
+
+                            <optgroup label="Science">
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Science">Science</option>
+                                <option value="Computer" selected>Computer</option>
+                            </optgroup>
+                            <optgroup label="Other Subjects">
+                                <option value="Social Studies">Social Studies</option>
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <!-- In this we can write text and get the result we wanted -->
+                        <label for="favoritesubject">Favorite Subject:</label>
+                        <input type="text" name="favoritesubject" id="favoritesubject" list="favoritesubject-list">
+                        <datalist id="favoritesubject-list">
+                            <!-- No need to write /option -->
+                            <option value="Mathematics">
+                            <option value="Physics">
+                            <option value="Chemistry">
+                            <option value="Biology">
+                            <option value="Computer">
+                            <option value="Social Studies">
+                            <option value="English">
+                            <option value="Hindi">
+                        </datalist>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Subjects You Have</legend>
+                    <p>
+                        <input type="checkbox" name="Subject" id="Mathematics" value="Mathematics">
+                        <label for="Mathematics">Mathematics</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Subject" id="Physics" value="Physics">
+                        <label for="Physics">Physics</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Subject" id="Chemistry" value="Chemistry">
+                        <label for="Chemistry">Chemistry</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Subject" id="Biology" value="Biology">
+                        <label for="Biology">Biology</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Subject" id="Computer" value="Computer">
+                        <label for="Computer">Computer</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Subject" id="SocialStudies" value="Social Studies">
+                        <label for="SocialStudies">Social Studies</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Subject" id="English" value="English">
+                        <label for="English">English</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Subject" id="Hindi" value="Hindi">
+                        <label for="Hindi">Hindi</label>
+                    </p>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send Me A Video OR Note</legend>
+                    <p>
+                        <label for="Video">Video:</label>
+                        <input type="file" name="Video" id="Video">
+                    </p>
+                    <h3>OR</h3>
+                    <p>
+                        <label for="Message">Message:</label>
+                        <br>
+                        <textarea name="Message" id="Message" cols="30" rows="10"
+                            placeholder="Enter Your Message"></textarea>
+                    </p>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </article>
+
+        <hr>
+        <!-- IT is used to show figure not at all useful but if we want to add description for image just like wikipedia  use this  -->
+        <!-- ADD ACTUAL WIDTH & HEIGHT FOR EACH IMAGE IN HTML IS GOOD PRACTICE AND YOU CAN CHANGE THAT IN CSS  -->
+        <figure>
+            <img src="images/Jayant.jpeg" alt="Jayant Pic" title="Jayant Baid's Picture" height="150" loading="lazy">
+            <figcaption>
+                <!-- this is description for image FIGCAPTION CAN BE EITHER ON TOP OF FIGURE OR AT THE END OF FIGURE-->
+                Jayant Baid Picture
+            </figcaption>
+        </figure>
+
+        <!-- You can add semantic tags like header main footer -->
+        <!-- aside is also like complementary -->
+        <aside>
+            <!-- details and summary will be together -->
+            <details>
+                <summary>
+                    <!-- Mark is used to highlight that -->
+                    <mark>Fruits</mark>
+                </summary>
+                <ul>
+                    <li>Apple</li>
+                    <li>Mango</li>
+                </ul>
+            </details>
+        </aside>
+        <!-- datetime doesnot show anything in web but give meaning to time and web can understand that. Gives meaning to browser -->
+        <p>Today date and time is 5 August and <time datetime="10:30">10:30 AM </time> </p>
+        <p>Today I study Web Dev For More Than <time datetime="PT3H">3 Hours</time></p>
+        <br>
+        <hr>
+        <!-- TABLE -->
+        <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+                <tr>
+                    <!-- scope is just semantics gives browser more info -->
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Work</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="09:00">9:00 AM</time>-<time datetime="12:00">12:00 PM</time>
+                    </td>
+                    <td>
+                        Doing Web Development
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Meeting</th>
+                    <td>
+                        <time datetime="12:00">12:00 PM</time>-<time datetime="13:00">01:00 PM</time>
+                    </td>
+                    <td>
+                        Vedantu Meeting
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Break</th>
+                    <td>
+                        <time datetime="13:00">13:00 PM</time>-<time datetime="15:00">03:00 PM</time>
+                    </td>
+                    <td>
+                        Rest+Lunch
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td rowspan="2">
+                        ALL Other Time
+                    </td>
+                    <td>
+                        Rest
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Night</th>
+                    <td>
+                        Sleep
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Do DSA After All</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+
+</html>
